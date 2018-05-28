@@ -1,0 +1,8 @@
+name: Bugz
+description: |
+  Cisco Bugfinder Toolkit Bot
+version: v1.0
+category: Cisco
+maintainer: Jeff Levensailor
+license: Presidio Internal Only
+projectURL: https://gitlab.presidio.com/jlevensailor/bugz.git

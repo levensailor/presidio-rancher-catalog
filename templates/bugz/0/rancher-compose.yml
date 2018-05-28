@@ -1,0 +1,59 @@
+.catalog:
+  name: Bugz
+  description: |
+    Cisco Bugfinder Toolkit Bot
+  version: 1.0-rancher1
+  minimum_rancher_version: v1.0.0
+  maintainer: "Jeff Levensailor <jlevensailor@presidio.com>"
+  uuid: bugz-0
+  questions:
+    - variable: "bugz_token"
+      description: |
+        Webex Teams Bot Token 
+      label: "Token:"
+      default: ""
+      required: true
+      type: "string"
+    - variable: "bugz_botemail"
+      description: |
+        Bot Email, ie bugz@webex.bot 
+      label: "Bot Email:"
+      default: ""
+      required: true
+      type: "string"
+    - variable: "bugz_botname"
+      description: "Bot Name, ie bugz"
+      label: "Bot Name:"
+      required: true
+      default: ""
+      type: "String"
+    - variable: "bugz_roomid"
+      description: "Room ID, ie Y2lzY29zcGFyazovL3VzL1JPT00vOTgzNjhjNzAtNzYwMy0xMWU2LTg3ODItZDNlNzAxZmZlMmQw"
+      label: "Room ID:"
+      required: true
+      default: ""
+      type: "string"
+    - variable: "bugz_clientid"
+      description: "Cisco Support API Client ID"
+      label: "Client ID:"
+      required: true
+      default: ""
+      type: "string"
+    - variable: "bugz_clientsecret"
+      description: "Cisco Support API Client Secret"
+      label: "Client Secret:"
+      required: true
+      default: ""
+      type: "string"
+    - variable: "bugz_granttype"
+      description: "Cisco Support API Grant Type - Client Credentials only at this time"
+      label: "Grant Type:"
+      required: true
+      default: "client_credentials"
+      type: "string"
+    - variable: "bugz_port"
+      description: "Port to listen"
+      label: "Port:"
+      required: true
+      default: "3000"
+      type: "int"

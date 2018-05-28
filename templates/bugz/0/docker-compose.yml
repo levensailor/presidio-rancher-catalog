@@ -1,0 +1,20 @@
+version: '2'
+services:
+  bugz:
+    image: registry.presidio.com/jlevensailor/bugz
+    environment:
+      TOKEN: ${bugz_token}
+      BOTEMAIL: ${bugz_botemail}
+      BOTNAME: ${bugz_name}
+      ROOMID: ${bugz_roomid}
+      CLIENT_ID: ${bugz_clientid}
+      CLIENT_SECRET: ${bugz_clientsecret}
+      GRANT_TYPE: ${bugz_granttype}
+      PORT: ${bugz_port}
+      NODE_TLS_REJECT_UNAUTHORIZED: '''0'''
+    stdin_open: true
+    tty: true
+    ports:
+    - 3000:3000/tcp
+    labels:
+      io.rancher.container.pull_image: always
