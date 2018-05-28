@@ -1,0 +1,35 @@
+.catalog:
+  name: Kevin
+  description: |
+    Kevin is a conversational human resources bot with a California Cool attitude
+  version: 1.0-rancher1
+  minimum_rancher_version: v1.0.0
+  maintainer: "Jeff Levensailor <jlevensailor@presidio.com>"
+  uuid: kevin-0
+  questions:
+    - variable: "kevin_token"
+      description: |
+        Webex Teams Bot Token 
+      label: "Token:"
+      default: ""
+      required: true
+      type: "string"
+    - variable: "kevin_botemail"
+      description: |
+        Bot Email, ie kevin@webex.bot 
+      label: "Bot Email:"
+      default: ""
+      required: true
+      type: "string"
+    - variable: "kevin_botname"
+      description: "Bot Name, ie kevin"
+      label: "Bot Name:"
+      required: true
+      default: ""
+      type: "String"
+    - variable: "kevin_port"
+      description: "Port to listen"
+      label: "Port:"
+      required: true
+      default: "3000"
+      type: "int"

@@ -1,0 +1,8 @@
+name: Tacobot
+description: |
+  Tool for Automating Cisco Operations
+version: v1.0
+category: Bots
+maintainer: Jeff Levensailor
+license: Presidio Internal Only
+projectURL: https://gitlab.presidio.com/jlevensailor/tacos.git

@@ -1,0 +1,77 @@
+.catalog:
+  name: Taco Bot
+  description: |
+    Tool for Automating Cisco Operations
+  version: 1.0-rancher1
+  minimum_rancher_version: v1.0.0
+  maintainer: "Jeff Levensailor <jlevensailor@presidio.com>"
+  uuid: tacobot-0
+  questions:
+    - variable: "tacos_token"
+      description: |
+        Webex Teams Bot Token 
+      label: "Token:"
+      default: ""
+      required: true
+      type: "string"
+    - variable: "tacos_botemail"
+      description: |
+        Bot Email, ie tacos@webex.bot 
+      label: "Bot Email:"
+      default: ""
+      required: true
+      type: "string"
+    - variable: "tacos_botname"
+      description: "Bot Name, ie tacobot"
+      label: "Bot Name:"
+      required: true
+      default: ""
+      type: "String"
+    - variable: "tacos_cucm"
+      description: "CUCM IP Address of node running AXL service, ie 10.100.1.20"
+      label: "CUCM IP:"
+      required: true
+      default: ""
+      type: "string"
+    - variable: "tacos_defaultpt"
+      description: "Default Partition if None Specified"
+      label: "Default Partition"
+      required: true
+      default: "Systemwide-Internal_PT"
+      type: "string"
+    - variable: "tacos_axlver"
+      description: "AXL Version, ie 11.5"
+      label: "AXL Version:"
+      required: true
+      default: "11.5"
+      type: "string"
+    - variable: "tacos_axluser"
+      description: "A Username with AXL API Access"
+      label: "AXL User:"
+      required: true
+      default: "axluser"
+      type: "string"
+    - variable: "tacos_axlpass"
+      description: "Password for AXL user"
+      label: "AXL Password:"
+      required: true
+      default: ""
+      type: "string"
+    - variable: "tacos_domains"
+      description: "Comma Seperated List of Whitelisted Domains"
+      label: "Whitelisted Domains:"
+      required: true
+      default: "[presidio.com]"
+      type: "string"
+    - variable: "tacos_emails"
+      description: "Comma Seperated List of Whitelisted Emails"
+      label: "Whitelisted Emails:"
+      required: true
+      default: "[jlevensailor@presidio.com]"
+      type: "string"            
+    - variable: "tacos_port"
+      description: "Port to listen"
+      label: "Port:"
+      required: true
+      default: "3000"
+      type: "int"

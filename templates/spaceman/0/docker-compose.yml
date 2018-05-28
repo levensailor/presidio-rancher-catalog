@@ -1,0 +1,16 @@
+version: '2'
+services:
+  bugz:
+    image: registry.presidio.com/jlevensailor/spaceman
+    environment:
+      TOKEN: ${spacecman_token}
+      BOTEMAIL: ${spaceman_botemail}
+      BOTNAME: ${spaceman_name}
+      PORT: ${spaceman_port}
+      NODE_TLS_REJECT_UNAUTHORIZED: '''0'''
+    stdin_open: true
+    tty: true
+    ports:
+    - 3000:3000/tcp
+    labels:
+      io.rancher.container.pull_image: always

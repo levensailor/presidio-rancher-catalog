@@ -1,0 +1,8 @@
+name: Kevin
+description: |
+  Kevin is a conversational HR bot with a California Cool attitude
+version: v1.0
+category: Bots
+maintainer: Jeff Levensailor
+license: Presidio Internal Only
+projectURL: https://gitlab.presidio.com/jlevensailor/kevin.git

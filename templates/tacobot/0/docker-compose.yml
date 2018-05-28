@@ -1,0 +1,23 @@
+version: '2'
+services:
+  tacobot:
+    image: registry.presidio.com/jlevensailor/tacos
+    environment:
+      TOKEN: ${tacos_token}
+      BOTEMAIL: ${tacos_botemail}
+      BOTNAME: ${tacos_botname}
+      CUCM: ${tacos_cucm}
+      SYSTEMWIDE_PT: ${tacos_defaultpt}
+      AXLVERSION: ${tacos_axlver}
+      AXLUSER: ${tacos_axluser}
+      AXLPASS: ${tacos_axlpass}
+      PORT: ${tacos_port}
+      NODE_TLS_REJECT_UNAUTHORIZED: '''0'''
+      WHITELIST_DOMAINS: ${tacos_domains}
+      WHITELIST_EMAILS: ${tacos_emails}
+    stdin_open: true
+    tty: true
+    ports:
+    - 3000:3000/tcp
+    labels:
+      io.rancher.container.pull_image: always

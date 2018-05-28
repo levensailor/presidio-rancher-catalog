@@ -1,0 +1,35 @@
+.catalog:
+  name: Spaceman
+  description: |
+    Presidio Space Manager Bot for Webex Teams
+  version: 1.0-rancher1
+  minimum_rancher_version: v1.0.0
+  maintainer: "Jeff Levensailor <jlevensailor@presidio.com>"
+  uuid: spaceman-0
+  questions:
+    - variable: "spaceman_token"
+      description: |
+        Webex Teams Bot Token 
+      label: "Token:"
+      default: ""
+      required: true
+      type: "string"
+    - variable: "spaceman_botemail"
+      description: |
+        Bot Email, ie spaceman@webex.bot 
+      label: "Bot Email:"
+      default: ""
+      required: true
+      type: "string"
+    - variable: "spaceman_botname"
+      description: "Bot Name, ie spaceman"
+      label: "Bot Name:"
+      required: true
+      default: ""
+      type: "String"
+    - variable: "bugz_port"
+      description: "Port to listen"
+      label: "Port:"
+      required: true
+      default: "3000"
+      type: "int"

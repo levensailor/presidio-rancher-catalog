@@ -1,0 +1,16 @@
+version: '2'
+services:
+  bugz:
+    image: registry.presidio.com/jlevensailor/kevin
+    environment:
+      TOKEN: ${kevin_token}
+      BOTEMAIL: ${kevin_botemail}
+      BOTNAME: ${kevin_name}
+      PORT: ${kevin_port}
+      NODE_TLS_REJECT_UNAUTHORIZED: '''0'''
+    stdin_open: true
+    tty: true
+    ports:
+    - 3000:3000/tcp
+    labels:
+      io.rancher.container.pull_image: always
