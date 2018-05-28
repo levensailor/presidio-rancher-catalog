@@ -26,7 +26,7 @@
       label: "Bot Name:"
       required: true
       default: ""
-      type: "String"
+      type: "string"
     - variable: "tacos_cucm"
       description: "CUCM IP Address of node running AXL service, ie 10.100.1.20"
       label: "CUCM IP:"
